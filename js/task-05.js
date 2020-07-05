@@ -17,10 +17,10 @@
 "use strict";
 
 const userInput = prompt("Введите вашу страну");
-const normalizedInput = userInput.toLowerCase();
 let price;
 
 if (userInput !== null) {
+  const normalizedInput = userInput.toLowerCase();
   switch (normalizedInput) {
     case "китай":
       price = 100;
