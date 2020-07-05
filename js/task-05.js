@@ -14,6 +14,8 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
+"use strict";
+
 const userInput = prompt("Введите вашу страну");
 const normalizedInput = userInput.toLocaleLowerCase();
 let price;

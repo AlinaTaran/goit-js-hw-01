@@ -10,6 +10,8 @@
 //  'Доступ запрещен, неверный пароль!'
 // После всех проверок вывести в alert значение переменной message.
 
+"use strict";
+
 const ADMIN_PASSWORD = "пароль";
 const userInput = prompt('Введите "пароль"');
 let message;

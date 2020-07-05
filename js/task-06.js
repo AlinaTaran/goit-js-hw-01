@@ -11,6 +11,8 @@
 // let input;
 // let total = 0;
 
+"use strict";
+
 let input;
 let total = 0;
 
