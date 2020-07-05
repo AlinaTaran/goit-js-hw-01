@@ -17,7 +17,7 @@
 "use strict";
 
 const userInput = prompt("Введите вашу страну");
-const normalizedInput = userInput.toLocaleLowerCase();
+const normalizedInput = userInput.toLowerCase();
 let price;
 
 if (userInput !== null) {
