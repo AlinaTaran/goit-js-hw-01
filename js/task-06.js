@@ -23,7 +23,7 @@ do {
     if (Number.isNaN(num)) {
       alert("Было введено не число, попробуйте еще раз");
       continue;
-    } total += num; 
+    }total += num;
   }
 } while (input !== null);
 alert(`Сума равна ${total}`);
