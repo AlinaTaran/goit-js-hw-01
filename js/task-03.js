@@ -18,13 +18,9 @@ let message;
 
 if (userInput === null) {
   message = "Отмененно пользователем";
+} else if (userInput === ADMIN_PASSWORD) {
+  message = "Добро пожаловать!";
 } else {
-  if (userInput === ADMIN_PASSWORD) {
-    message = "Добро пожаловать!";
-  } else {
-    if (userInput !== ADMIN_PASSWORD) {
-      message = "Неверный пароль";
-    }
-  }
+  message = "Неверный пароль!";
 }
 alert(message);

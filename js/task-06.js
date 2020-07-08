@@ -18,11 +18,12 @@ let total = 0;
 
 do {
   input = prompt("Введите число!");
-  let num = Number(input);
-  if (Number.isNaN(num)) {
-    alert("Было введено не число, попробуйте еще раз");
-  } else {
-    total += num;
+  if (input !== null) {
+    const num = Number(input);
+    if (Number.isNaN(num)) {
+      alert("Было введено не число, попробуйте еще раз");
+      continue;
+    } total += num; 
   }
 } while (input !== null);
 alert(`Сума равна ${total}`);

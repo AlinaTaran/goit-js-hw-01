@@ -17,30 +17,29 @@
 "use strict";
 
 const userInput = prompt("Введите вашу страну");
-let price;
+const priceChina = 100;
+const priceChile = 250;
+const priceAustralia = 170;
+const priceIndia = 80;
+const priceJamaica = 120;
 
 if (userInput !== null) {
   const normalizedInput = userInput.toLowerCase();
   switch (normalizedInput) {
     case "китай":
-      price = 100;
-      alert(`Доставка в ${normalizedInput} будет стоить ${price} кредитов`);
+      alert(`Доставка в ${normalizedInput} будет стоить ${priceChina} кредитов`);
       break;
     case "чили":
-      price = 250;
-      alert(`Доставка в ${normalizedInput} будет стоить ${price} кредитов`);
+      alert(`Доставка в ${normalizedInput} будет стоить ${priceChile} кредитов`);
       break;
     case "австралия":
-      price = 170;
-      alert(`Доставка в ${normalizedInput} будет стоить ${price} кредитов`);
+      alert(`Доставка в ${normalizedInput} будет стоить ${priceAustralia} кредитов`);
       break;
     case "индия":
-      price = 80;
-      alert(`Доставка в ${normalizedInput} будет стоить ${price} кредитов`);
+      alert(`Доставка в ${normalizedInput} будет стоить ${priceIndia} кредитов`);
       break;
     case "ямайка":
-      price = 120;
-      alert(`Доставка в ${normalizedInput} будет стоить ${price} кредитов`);
+      alert(`Доставка в ${normalizedInput} будет стоить ${priceJamaica} кредитов`);
       break;
     default:
       alert("В вашей стране доставка не доступна");
