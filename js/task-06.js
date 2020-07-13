@@ -19,11 +19,11 @@ let total = 0;
 do {
   input = prompt("Введите число!");
   if (input !== null) {
-    const num = Number(input);
-    if (Number.isNaN(num)) {
+    if (isNaN(+input)) {
       alert("Было введено не число, попробуйте еще раз");
       continue;
-    }total += num;
+    }
+    total += +input;
   }
 } while (input !== null);
 alert(`Сума равна ${total}`);
