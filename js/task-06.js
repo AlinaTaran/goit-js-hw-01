@@ -19,7 +19,7 @@ let total = 0;
 do {
   input = prompt("Введите число!");
   if (input !== null) {
-    if (isNaN(+input)) {
+    if (Number.isNaN(+input)) {
       alert("Было введено не число, попробуйте еще раз");
       continue;
     }
